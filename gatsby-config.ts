@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   pathPrefix: "gatsby-pwa-poc",
   siteMetadata: {
     title: `gatsby-pwa-poc`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://motorizedwandoffury.github.io/gatsby-pwa-poc/`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
