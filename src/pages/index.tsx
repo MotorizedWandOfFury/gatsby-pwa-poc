@@ -111,7 +111,9 @@ const IndexPage: FC<PageProps> = () => {
         }}>Clear</button>
       </div>
       <p>This is new text to test that updates get pushed</p>
+      <p>This is more new text to test that updates get pushed</p>
       <img
+        style={{width: 400, height: 300}}
         alt="cat picture 2"
         src={catPicture}
       />
