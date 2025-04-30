@@ -1,7 +1,6 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
-  pathPrefix: "gatsby-pwa-poc",
   siteMetadata: {
     title: `gatsby-pwa-poc`,
     siteUrl: `https://www.yourdomain.tld`
