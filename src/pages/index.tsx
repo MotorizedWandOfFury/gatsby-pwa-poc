@@ -110,6 +110,7 @@ const IndexPage: FC<PageProps> = () => {
           setDripRate(0)
         }}>Clear</button>
       </div>
+      <p>This is new text to test that updates get pushed</p>
       <img
         alt="cat picture 2"
         src={catPicture}
