@@ -15,18 +15,14 @@ const config: GatsbyConfig = {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "name": "Gatsby PWA POC",
-      "start_url": "/",
-      "display": "standalone",
-      // special non-PWA Gatsby config
-      "cache_busting_mode": "none",
       "icon": "src/images/icon.png",
+      "start_url": "/",
+      "display": "standalone"
     }
   }, {
     resolve: 'gatsby-plugin-offline',
     options: {
-      workboxConfig: {
-        globPatterns: ['**/gatsby-pwa-poc*']
-      }
+      precachePages: ['**/*','**/another_page/*', '**/404/*']
     }
   }]
 };
