@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  //this should be undefined when running locally. Ran into issues while testing on device.
   pathPrefix: "gatsby-pwa-poc",
   siteMetadata: {
     title: `gatsby-pwa-poc`,
@@ -21,7 +22,7 @@ const config: GatsbyConfig = {
   }, {
     resolve: 'gatsby-plugin-offline',
     options: {
-      precachePages: ['**/*']
+      precachePages: ['**/*','**/another_page/*', '**/404/*']
     }
   }]
 };
