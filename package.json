@@ -10,14 +10,15 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
+    "build": "gatsby build --prefix-paths",
+    "serve": "gatsby serve --prefix-paths --port 9001",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "gatsby": "^5.14.1",
     "gatsby-plugin-manifest": "^5.14.0",
+    "gatsby-plugin-offline": "^6.14.0",
     "gatsby-plugin-postcss": "^6.14.0",
     "postcss": "^8.5.3",
     "react": "^18.2.0",

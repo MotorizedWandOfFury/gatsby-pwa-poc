@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "gatsby-pwa-poc",
   siteMetadata: {
     title: `gatsby-pwa-poc`,
     siteUrl: `https://www.yourdomain.tld`
@@ -12,7 +13,15 @@ const config: GatsbyConfig = {
   plugins: ["gatsby-plugin-postcss", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "name": "Gatsby PWA POC",
+      "icon": "src/images/icon.png",
+      "start_url": "/",
+      "display": "standalone"
+    }
+  }, {
+    resolve: 'gatsby-plugin-offline',
+    options: {
+      precachePages: ['**/*']
     }
   }]
 };
