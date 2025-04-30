@@ -23,7 +23,7 @@ const linkStyle = {
   verticalAlign: "5%",
 }
 
-const AnotherPage: FC<PageProps> = () => {
+const AnotherPage: FC<{path: string}> = () => {
 
     return (
         <main>
